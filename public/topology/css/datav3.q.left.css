@@ -1,0 +1,184 @@
+.leftinfo{
+    width: 290px;
+    height: 270px;
+    position: absolute;
+    top: 60px;
+    left: 20%;
+ }
+ /*************right satr*********/
+ .leftinfo .right{
+     position: absolute;
+     top: 11px;
+     left: 81px;
+     width: 200px;
+     height: 72px;
+     padding: 13px 0;
+     overflow: hidden;
+ }
+ .leftinfo .right span,
+ .leftinfo .right input{	
+     background: #123d61;
+     opacity: 0.7;
+     box-sizing: border-box;	
+ }
+ .leftinfo .right input.error{
+     color: red;
+     font-size: 16px;
+ }
+ .leftinfo .right input{	
+     width: 98%;
+     float: left;
+     height: 46px;
+     line-height: 46px;
+     border: 1px solid #000;
+     border-radius: 4px;
+     box-shadow: 0px 0px 2px 2px #86bedb;
+     padding-left: 30px;
+     padding-right: 48px;
+     color: #fff;
+     font-size: 20px;
+     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+ }
+ .leftinfo .right i{
+     display: inline-block;
+     width: 36px;
+     height: 42px;
+     line-height: 42px;
+     position: absolute;
+     top: 15px;
+     right: 3px;
+     text-align: center;
+     color: #d3c726;
+ }
+ .leftinfo .right .iconfont{
+     color: #d3c726;
+     font-size: 24px;
+     cursor: pointer;
+ }
+ .leftinfo .right .poly{
+     height: 86px;
+     width: 160px;
+     background: url('../images/q/s_input_bg.png') no-repeat;
+     background-size: contain;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ /*************left start*********/
+ .leftinfo .left{
+     width: 110px;
+     height: 100%;
+ }
+ .leftinfo .left .left-wrap{
+     perspective: 500;
+     -webkit-perspective: 500;
+ }
+ .leftinfo .left .left-wrap div{
+     position:absolute;
+     left: 0;
+     width: 110px;
+     height: 102px;
+     /*line-height: 100px;*/
+     transition: all 1s;
+     transform-style: preserve-3d;
+     -webkit-transform-style: preserve-3d;
+     cursor: pointer;
+     /*text-align: center;*/
+     font-size: 28px;
+     color: yellow;
+     font-weight: bold;
+ 
+     /*border: 1px solid red;*/
+ }
+ .leftinfo .left .first{
+     background: url('../images/q/s_sel_bg.png') no-repeat;
+ }
+ .leftinfo .left .left-wrap div:nth-child(1){
+     
+     background-size: contain;
+ }
+ .leftinfo .left .left-wrap div:nth-child(2){
+     /*background: url('../images/q/s_sel_bg.png') no-repeat;*/
+     background-size: contain;
+ }
+ .leftinfo .left .left-wrap div:nth-child(3){
+     /*background: url('../images/q/s_sel_bg.png') no-repeat;*/
+     background-size: contain;
+ }
+ .leftinfo .left .left-wrap img{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ /*.leftinfo .left .left-wrap div:nth-child(1),*/
+ .leftinfo .left .left-wrap div:nth-child(2),
+ .leftinfo .left .left-wrap div:nth-child(3){
+     transform:rotate(360deg) scale(0.75) ;
+ }
+ /*.leftinfo .left .left-wrap div:nth-child(1):hover,
+ .leftinfo .left .left-wrap div:nth-child(2):hover,
+ .leftinfo .left .left-wrap div:nth-child(3):hover{
+     transform: scale(1) rotate(360deg);
+ }*/
+ .leftinfo .left .left-wrap .first{
+     top: 0;  
+     transform: rotate(0deg) scale(1) ; 
+ }
+ .leftinfo .left .left-wrap div:nth-child(2){
+     top: 95px;
+ }
+ .leftinfo .left .left-wrap div:nth-child(3){
+     top: 170px;
+ }
+ /*左下按钮*/
+ .myleft .log,
+ .myleft .phy{
+     width:74px;
+     height:54px;
+     position: absolute;
+     right:30%;
+     background-size: cover;
+     border: none;
+     border-radius:  10px; 
+     overflow: visible;
+     opacity: 0.4;
+     transition: all 0.7s;
+     cursor: pointer;
+     background-color: #333;	
+ }
+ .myleft .log{
+     bottom: 180px;
+ }
+ .myleft .phy{
+     bottom: 100px;
+ }
+ .myleft .active{
+     background-color: #003366;
+     opacity: 1;
+ }
+ .myleft .log div,
+ .myleft .phy div{
+     width: 92px;
+     height: 54px;
+     border: none;
+     background: url('../images/q/switch_log_phy.png') no-repeat;
+ }
+ .myleft .log div{
+     background-position: 0px -59px;	
+ }
+ .myleft .log .active{
+     background-position: 0px 0px;	
+ }
+ .myleft .phy div{
+     background-position: -99px -59px;		
+ }
+ .myleft .phy .active{
+     background-position: -99px 0px;		
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 

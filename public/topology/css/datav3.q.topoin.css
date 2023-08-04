@@ -1,0 +1,102 @@
+/*域内地理拓扑*/
+#map_topoin{
+    position: relative;
+    z-index: 99;
+  }
+  .mymiddle .marker-msg{
+    display: none;
+    position: absolute;
+    max-width: 330px;
+    min-height: 50px;
+    overflow: auto;
+    border: 1px solid #1dd2e3;
+    padding: 10px;
+    background: rgba(20,53,72,0.7);
+    z-index: 199;
+    vertical-align: center;
+    font-size: 12px;
+  }
+  .mymiddle .marker-msg .content .loading{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    height: 80px;
+  }
+  .mymiddle .marker-msg .content p{
+    margin-bottom: 4px;
+  }
+  .mymiddle .marker-msg .iconfont{
+    /*display: block;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 20px;
+    cursor: default;
+    cursor: pointer;
+  }
+  .mymiddle .leaflet-popup-content-wrapper,
+  .mymiddle .leaflet-popup-tip {
+    /*background: rgba(36, 75, 105, 0.7);*/
+    background: rgba(63, 150, 229, 0.7);
+  }
+  .leaflet-control-attribution{
+    display: none !important;
+  }
+  .mymiddle .leaflet-popup-content {
+    margin: 5px 20px 5px 15px;
+    }
+  .mymiddle .leaflet-popup-content p {
+    margin: 4px 0;
+    }
+  .mymiddle .leaflet-marker-pane grey{
+    /*filter:  grayscale(1) brightness(.9);*/
+  }
+  .coreIcon,
+  .interIcon,
+  .areaIcon{
+    line-height: 29px;
+    text-align: center;
+    font-size: 12px;
+    transition: all 0.3s;
+    opacity: 0.5;
+    /*transform: translateZ(0px);*/
+    /*border: 1px solid red;*/
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .areaIcon{
+    color: rgb(4,163,249);
+  
+  }
+  .interIcon{
+    color: rgb(216,30,6);
+  }
+  .coreIcon{
+    color: rgb(244,234,42);
+  }
+  .mymiddle .leaflet-marker-pane .grey{
+    color: rgba(158,158,158,0.1);
+    /*opacity: 0.1;*/
+  }
+  .mymiddle .leaflet-marker-pane .active{
+  /*  width: 30px;
+    height: 30px;*/
+    opacity: 1;
+    font-size: 27px;
+    background-color: #0d2f2f;
+  /*  margin-bottom: 2px;*/
+    /*-webkit-transform: translateZ(100px);*/
+    /*transform: translateZ(100px);*/
+  }
+  /*.zr-element,*/
+  .leaflet-webgl{
+    pointer-events: none;
+  }
+  
+  
+  
+    
+  

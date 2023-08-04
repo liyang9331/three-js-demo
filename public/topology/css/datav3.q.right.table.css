@@ -1,0 +1,302 @@
+/****************common**********/
+.right-btm .content {
+    margin-top: 88px;
+    margin-left: 16px;
+    width: 464px;
+    height: 300px;
+    /*margin: 0 auto;*/
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  .right-btm .content table {
+    font-size: 8px;
+    text-align: center;
+    border-collapse: separate;
+    width: 450px;
+    transition: all 0.5s;
+  }
+  
+  .right-btm .content table td {
+    vertical-align: middle;
+  }
+  
+  .right-btm .content .content-title,
+  .right-btm .content .content-list {
+    margin: 3px;
+    margin-top: 4px;
+  }
+  
+  .right-btm .content .content-title {
+    border: 2px solid #17496a;
+    box-shadow: 0 0 2px 1px #17496a;
+    padding: 10px 4px;
+    position: fixed;
+    margin-top: -56px;
+  }
+  
+  .right-btm .content .content-title tr th {
+    border: 1px solid #17496a;
+    box-shadow: 0 0 10px 2px #17496a;
+    vertical-align: middle;
+  }
+  
+  .right-btm .content .content-title tr:last-child th {
+    border-top: none;
+  }
+  
+  .right-btm .content .content-list {
+    padding: 4px;
+    background-color: #0c2031;
+    border: 1px solid #17496a;
+    -webkit-animation-name: animation-table;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: .5s;
+    transition: all 500ms ease, opacity 250ms ease;
+  }
+  
+  @-webkit-keyframes animation-table {
+    0% {
+      transform: rotateX(60deg);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: rotateX(30deg);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .right-btm .content .content-list tr {
+    cellspacing: 2px;
+  }
+  
+  .right-btm .content .content-list tr td {
+    border-right: 1px solid #17496a;
+    vertical-align: middle;
+  }
+  
+  .right-btm .content .content-list tr td:last-child {
+    border-right: none;
+  }
+  
+  .right-btm .content .active {
+    border-color: #a59018;
+    background-color: #423e1b;
+    box-shadow: 0 0 0px 2px #423e1b, 0 0 0px 3px #6f6c16;
+  }
+  
+  .right-btm .content .content-list:hover {
+    border-color: #a59018;
+    background-color: #423e1b;
+    box-shadow: 0 0 0px 2px #423e1b, 0 0 0px 3px #6f6c16;
+  }
+  
+  /*针对每个列表的单独处理*/
+  /*.right-btn .aslist,*/
+  .right-btm .countrylist {
+    display: none;
+  }
+  
+  .right-btm .listContainer {
+    /*height: 100%;*/
+  }
+  
+  /*as列表及相邻as列表*/
+  .right-btm .aslistStyle .content-title,
+  .right-btm .aslistStyle .content-list {
+    height: 56px;
+  }
+  
+  .right-btm .aslistStyle .content-title tr th,
+  .right-btm .aslistStyle .content-list tr td {
+    width: 40px;
+  }
+  
+  .right-btm .aslistStyle table tr .ipv,
+  .right-btm .aslistStyle table tr .ccip {
+    width: 79px;
+  }
+  
+  .right-btm .aslistStyle table tr .type {
+    width: 85px;
+  }
+  
+  /*国家列表*/
+  .right-btm .countrylistStyle .content-title,
+  .right-btm .countrylistStyle .content-list {
+    height: 40px;
+  }
+  
+  .right-btm .countrylist .content-title,
+  .right-btm .adjacentcountrylist .content-title {
+    margin-top: -49px;
+  }
+  
+  .right-btm .countrylistStyle .content-title tr th,
+  .right-btm .countrylistStyle .content-list tr td {
+    width: 60px;
+  }
+  
+  .right-btm .countrylistStyle table tr th:nth-child(5),
+  .right-btm .countrylistStyle table tr td:nth-child(5) {
+    width: 90px;
+  }
+  
+  /*与X国相连的AS列表*/
+  .right-btm .countrysaslist .content-title {
+    /*margin-top: -49px;*/
+  }
+  
+  .right-btm .countrysaslist .content-title,
+  .right-btm .countrysaslist .content-list {
+    height: 56px;
+  }
+  
+  .right-btm .countrysaslist .content-title tr th,
+  .right-btm .countrysaslist .content-list tr td {
+    width: 56px;
+  }
+  
+  .right-btm .countrysaslist table tr th:nth-child(3),
+  .right-btm .countrysaslist table tr td:nth-child(3) {
+    width: 84px;
+  }
+  
+  .right-btm .countrysaslist table tr th:nth-child(5),
+  .right-btm .countrysaslist table tr td:nth-child(5) {
+    width: 136px;
+  }
+  
+  .right-btm .countrysaslist .content-list tr:nth-child(2) td:last-child {
+    border-right: 1px solid #17496a;
+  }
+  
+  /*域内路由器列表*/
+  .right-btm .routerlist .content-title tr th,
+  .right-btm .routerlist .content-list tr td,
+  .right-btm .routeredgelist .content-title tr th,
+  .right-btm .routeredgelist .content-list tr td {
+    width: 72px;
+  }
+  
+  .right-btm .routerlist .content-title tr th:nth-child(1),
+  .right-btm .routerlist .content-list tr td:nth-child(1) {
+    width: 50px;
+  }
+  
+  .right-btm .routeredgelist .content-title tr th:nth-child(1),
+  .right-btm .routeredgelist .content-list tr td:nth-child(1) {
+    width: 100px;
+  }
+  
+  .right-btm .routeredgelist .content-title tr th:nth-child(6),
+  .right-btm .routeredgelist .content-list tr td:nth-child(6) {
+    width: 100px;
+  }
+  
+  .right-btm .routerlist .content-title tr th:nth-child(2),
+  .right-btm .routerlist .content-list tr td:nth-child(2) {
+    min-width: 94px;
+  }
+  
+  .right-btm .routerlist .content-list .row1 td:nth-child(2),
+  .right-btm .routerlist .content-list .row1 td:nth-child(6),
+  .right-btm .routeredgelist .content-list td.mult,
+  .right-btm .routeredgelist .content-list td.mult {
+    position: relative;
+  }
+  
+  .right-btm .routerlist .content-list .row1 td:nth-child(6) {
+    min-width: 50px;
+    max-width: 50px;
+  }
+  
+  .right-btm .routerlist .content-list .row1 td:nth-child(6) span,
+  .right-btm .routerlist .content-list .row1 td:nth-child(2) span,
+  .right-btm .routeredgelist .content-list td span {
+    display: inline-block;
+    width: 98%;
+    padding: 2px 0;
+    border: 1px solid #fff;
+    border-right: 1px solid #fff !important;
+    background-color: #000;
+    cursor: pointer;
+  }
+  
+  .right-btm a {
+    text-decoration: none;
+  }
+  
+  .right-btm .routerlist .content-list .row1 td:nth-child(6) ul,
+  .right-btm .routerlist .content-list .row1 td:nth-child(2) ul,
+  .right-btm .routeredgelist .content-list td ul {
+    display: none;
+    float: left;
+    position: absolute;
+    width: 100%;
+    /*width: 129px;*/
+    /*margin-left: 3%;*/
+    /*box-sizing: domainin-box;*/
+    border: 3px solid #17496a;
+    background-color: #ccc;
+    /*padding-top: 1px;*/
+    padding-bottom: 1px;
+    z-index: 100;
+  }
+  
+  .right-btm .routerlist .content-list .row1 td:nth-child(6) ul li,
+  .right-btm .routerlist .content-list .row1 td:nth-child(2) ul li,
+  .right-btm .routeredgelist .content-list td ul li {
+    background-color: #000;
+    /*width: 98%;*/
+    overflow: hidden;
+    border: 1px solid #17496a;
+    border-radius: 6px;
+    /*box-shadow: 0 0 6px #fff;*/
+    /*margin-left: 1%;*/
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+  /*多个AS的域内*/
+  .right-btm .listContainer .routerlist2 .content-title tr th:nth-child(1),
+  .right-btm .listContainer .routerlist2 .content-list tr td:nth-child(1) {
+    width: 107px;
+    /* min-width: 107px;
+     max-width: 107px;*/
+  }
+  
+  .right-btm .listContainer .routerlist2 .content-title tr th:nth-child(6),
+  .right-btm .listContainer .routerlist2 .content-list tr td:nth-child(6) {
+    min-width: 70px;
+    max-width: 70px;
+  }
+  
+  .right-btm .listContainer .routerlist2 .content-title tr th:nth-child(7),
+  .right-btm .listContainer .routerlist2 .content-list tr td:nth-child(7) {
+    min-width: 70px;
+    max-width: 70px;
+  }
+  
+  .right-btm-error {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    /*border-top: 1px dashed #b35537;*/
+    /*border-bottom: 1px dashed #b35537;*/
+    width: 100%;
+    text-align: center;
+    padding: 10px 4px 10px 0px;
+    margin: 20px;
+    color: #b35537;
+    font-family: "Microsoft YaHei", Arial;
+  }
+  
